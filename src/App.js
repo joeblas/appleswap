@@ -17,12 +17,12 @@ const App = () => {
     <MemoryRouter>
       <Container fluid className='bg-dark'>
         <Container className='p-3'>
-          <Jumbotron>
+          <Jumbotron className='jumboGradientBg'>
             <h1>Apple Swap</h1>
             <p>Find people selling Apple products you want!</p>
           </Jumbotron>
           <Row>
-            {listings?.map(listing=> {
+            {listings?.map((listing) => {
               return (
                 <Col sm='12' className='mb-3' key={listing?.data?.id}>
                   <ListingCard
